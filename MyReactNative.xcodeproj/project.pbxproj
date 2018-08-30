@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411B05E3211347A300BBD91D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B05E2211347A300BBD91D /* AppDelegate.m */; };
+		411B05E6211347A300BBD91D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B05E5211347A300BBD91D /* ViewController.m */; };
+		411B05E8211347A400BBD91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411B05E7211347A400BBD91D /* Assets.xcassets */; };
+		411B05EB211347A400BBD91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411B05E9211347A400BBD91D /* Main.storyboard */; };
+		411B05EE211347A400BBD91D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B05ED211347A400BBD91D /* main.m */; };
+		411B05F821134A2F00BBD91D /* MREngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B05F721134A2F00BBD91D /* MREngine.m */; };
+		411B0604212325A100BBD91D /* MRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B0603212325A100BBD91D /* MRView.m */; };
+		411B0607212325C400BBD91D /* MRRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B0606212325C400BBD91D /* MRRootView.m */; };
+		417975AE21313FCA00E3E690 /* MRDOMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 417975AD21313FCA00E3E690 /* MRDOMCore.m */; };
+		417975B121319CE900E3E690 /* test1.js in Resources */ = {isa = PBXBuildFile; fileRef = 417975B021319CE900E3E690 /* test1.js */; };
+		417975C82136E69500E3E690 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975B82136E69500E3E690 /* Utils.cpp */; };
+		417975C92136E69500E3E690 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975BB2136E69500E3E690 /* YGLayout.cpp */; };
+		417975CA2136E69500E3E690 /* YGFloatOptional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975BD2136E69500E3E690 /* YGFloatOptional.cpp */; };
+		417975CB2136E69500E3E690 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975BF2136E69500E3E690 /* Yoga.cpp */; };
+		417975CC2136E69500E3E690 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C02136E69500E3E690 /* YGStyle.cpp */; };
+		417975CD2136E69500E3E690 /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C22136E69500E3E690 /* YGNodePrint.cpp */; };
+		417975CE2136E69500E3E690 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C42136E69500E3E690 /* YGEnums.cpp */; };
+		417975CF2136E69500E3E690 /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C62136E69500E3E690 /* YGConfig.cpp */; };
+		417975D02136E69500E3E690 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C72136E69500E3E690 /* YGNode.cpp */; };
+		417975D52136E8E000E3E690 /* MRDOMNode+React.m in Sources */ = {isa = PBXBuildFile; fileRef = 417975D42136E8E000E3E690 /* MRDOMNode+React.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		411B05DE211347A300BBD91D /* MyReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411B05E1211347A300BBD91D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		411B05E2211347A300BBD91D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		411B05E4211347A300BBD91D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		411B05E5211347A300BBD91D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		411B05E7211347A400BBD91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		411B05EA211347A400BBD91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		411B05EC211347A400BBD91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411B05ED211347A400BBD91D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		411B05EF211347A400BBD91D /* MyReactNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyReactNative.entitlements; sourceTree = "<group>"; };
+		411B05F621134A2F00BBD91D /* MREngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MREngine.h; sourceTree = "<group>"; };
+		411B05F721134A2F00BBD91D /* MREngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MREngine.m; sourceTree = "<group>"; };
+		411B0602212325A100BBD91D /* MRView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRView.h; sourceTree = "<group>"; };
+		411B0603212325A100BBD91D /* MRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRView.m; sourceTree = "<group>"; };
+		411B0605212325C400BBD91D /* MRRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRRootView.h; sourceTree = "<group>"; };
+		411B0606212325C400BBD91D /* MRRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRRootView.m; sourceTree = "<group>"; };
+		417975AC21313FCA00E3E690 /* MRDOMCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRDOMCore.h; sourceTree = "<group>"; };
+		417975AD21313FCA00E3E690 /* MRDOMCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRDOMCore.m; sourceTree = "<group>"; };
+		417975B021319CE900E3E690 /* test1.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = test1.js; sourceTree = "<group>"; };
+		417975B42136E69500E3E690 /* YGFloatOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGFloatOptional.h; sourceTree = "<group>"; };
+		417975B52136E69500E3E690 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		417975B62136E69500E3E690 /* Yoga-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yoga-internal.h"; sourceTree = "<group>"; };
+		417975B72136E69500E3E690 /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLayout.h; sourceTree = "<group>"; };
+		417975B82136E69500E3E690 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		417975B92136E69500E3E690 /* YGNodePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNodePrint.h; sourceTree = "<group>"; };
+		417975BA2136E69500E3E690 /* YGEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGEnums.h; sourceTree = "<group>"; };
+		417975BB2136E69500E3E690 /* YGLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGLayout.cpp; sourceTree = "<group>"; };
+		417975BC2136E69500E3E690 /* YGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNode.h; sourceTree = "<group>"; };
+		417975BD2136E69500E3E690 /* YGFloatOptional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGFloatOptional.cpp; sourceTree = "<group>"; };
+		417975BE2136E69500E3E690 /* YGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGMacros.h; sourceTree = "<group>"; };
+		417975BF2136E69500E3E690 /* Yoga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yoga.cpp; sourceTree = "<group>"; };
+		417975C02136E69500E3E690 /* YGStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGStyle.cpp; sourceTree = "<group>"; };
+		417975C12136E69500E3E690 /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
+		417975C22136E69500E3E690 /* YGNodePrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGNodePrint.cpp; sourceTree = "<group>"; };
+		417975C32136E69500E3E690 /* YGStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGStyle.h; sourceTree = "<group>"; };
+		417975C42136E69500E3E690 /* YGEnums.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGEnums.cpp; sourceTree = "<group>"; };
+		417975C52136E69500E3E690 /* YGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGConfig.h; sourceTree = "<group>"; };
+		417975C62136E69500E3E690 /* YGConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGConfig.cpp; sourceTree = "<group>"; };
+		417975C72136E69500E3E690 /* YGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGNode.cpp; sourceTree = "<group>"; };
+		417975D32136E8E000E3E690 /* MRDOMNode+React.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRDOMNode+React.h"; sourceTree = "<group>"; };
+		417975D42136E8E000E3E690 /* MRDOMNode+React.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MRDOMNode+React.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		411B05DB211347A300BBD91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411B05D5211347A300BBD91D = {
+			isa = PBXGroup;
+			children = (
+				411B05F52113498000BBD91D /* MyReact */,
+				411B05E0211347A300BBD91D /* MyReactNative */,
+				411B05DF211347A300BBD91D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		411B05DF211347A300BBD91D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				411B05DE211347A300BBD91D /* MyReactNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		411B05E0211347A300BBD91D /* MyReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				411B05E1211347A300BBD91D /* AppDelegate.h */,
+				411B05E2211347A300BBD91D /* AppDelegate.m */,
+				411B05E4211347A300BBD91D /* ViewController.h */,
+				411B05E5211347A300BBD91D /* ViewController.m */,
+				411B05E7211347A400BBD91D /* Assets.xcassets */,
+				411B05E9211347A400BBD91D /* Main.storyboard */,
+				411B05EC211347A400BBD91D /* Info.plist */,
+				411B05ED211347A400BBD91D /* main.m */,
+				411B05EF211347A400BBD91D /* MyReactNative.entitlements */,
+			);
+			path = MyReactNative;
+			sourceTree = "<group>";
+		};
+		411B05F52113498000BBD91D /* MyReact */ = {
+			isa = PBXGroup;
+			children = (
+				417975B22136E66000E3E690 /* 3rd */,
+				417975AF21319CD200E3E690 /* test */,
+				417975AB21313FA100E3E690 /* dom */,
+				411B06012123256C00BBD91D /* view */,
+				411B05F621134A2F00BBD91D /* MREngine.h */,
+				411B05F721134A2F00BBD91D /* MREngine.m */,
+			);
+			path = MyReact;
+			sourceTree = "<group>";
+		};
+		411B06012123256C00BBD91D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				411B0602212325A100BBD91D /* MRView.h */,
+				411B0603212325A100BBD91D /* MRView.m */,
+				411B0605212325C400BBD91D /* MRRootView.h */,
+				411B0606212325C400BBD91D /* MRRootView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		417975AB21313FA100E3E690 /* dom */ = {
+			isa = PBXGroup;
+			children = (
+				417975AC21313FCA00E3E690 /* MRDOMCore.h */,
+				417975AD21313FCA00E3E690 /* MRDOMCore.m */,
+				417975D32136E8E000E3E690 /* MRDOMNode+React.h */,
+				417975D42136E8E000E3E690 /* MRDOMNode+React.m */,
+			);
+			path = dom;
+			sourceTree = "<group>";
+		};
+		417975AF21319CD200E3E690 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				417975B021319CE900E3E690 /* test1.js */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		417975B22136E66000E3E690 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				417975B32136E69500E3E690 /* yoga */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		417975B32136E69500E3E690 /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				417975B42136E69500E3E690 /* YGFloatOptional.h */,
+				417975B52136E69500E3E690 /* Utils.h */,
+				417975B62136E69500E3E690 /* Yoga-internal.h */,
+				417975B72136E69500E3E690 /* YGLayout.h */,
+				417975B82136E69500E3E690 /* Utils.cpp */,
+				417975B92136E69500E3E690 /* YGNodePrint.h */,
+				417975BA2136E69500E3E690 /* YGEnums.h */,
+				417975BB2136E69500E3E690 /* YGLayout.cpp */,
+				417975BC2136E69500E3E690 /* YGNode.h */,
+				417975BD2136E69500E3E690 /* YGFloatOptional.cpp */,
+				417975BE2136E69500E3E690 /* YGMacros.h */,
+				417975BF2136E69500E3E690 /* Yoga.cpp */,
+				417975C02136E69500E3E690 /* YGStyle.cpp */,
+				417975C12136E69500E3E690 /* Yoga.h */,
+				417975C22136E69500E3E690 /* YGNodePrint.cpp */,
+				417975C32136E69500E3E690 /* YGStyle.h */,
+				417975C42136E69500E3E690 /* YGEnums.cpp */,
+				417975C52136E69500E3E690 /* YGConfig.h */,
+				417975C62136E69500E3E690 /* YGConfig.cpp */,
+				417975C72136E69500E3E690 /* YGNode.cpp */,
+			);
+			path = yoga;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		411B05DD211347A300BBD91D /* MyReactNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411B05F2211347A400BBD91D /* Build configuration list for PBXNativeTarget "MyReactNative" */;
+			buildPhases = (
+				411B05DA211347A300BBD91D /* Sources */,
+				411B05DB211347A300BBD91D /* Frameworks */,
+				411B05DC211347A300BBD91D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyReactNative;
+			productName = MyReactNative;
+			productReference = 411B05DE211347A300BBD91D /* MyReactNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		411B05D6211347A300BBD91D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = kjyu;
+				TargetAttributes = {
+					411B05DD211347A300BBD91D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 411B05D9211347A300BBD91D /* Build configuration list for PBXProject "MyReactNative" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 411B05D5211347A300BBD91D;
+			productRefGroup = 411B05DF211347A300BBD91D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411B05DD211347A300BBD91D /* MyReactNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		411B05DC211347A300BBD91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411B05E8211347A400BBD91D /* Assets.xcassets in Resources */,
+				417975B121319CE900E3E690 /* test1.js in Resources */,
+				411B05EB211347A400BBD91D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		411B05DA211347A300BBD91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417975AE21313FCA00E3E690 /* MRDOMCore.m in Sources */,
+				417975D02136E69500E3E690 /* YGNode.cpp in Sources */,
+				417975CC2136E69500E3E690 /* YGStyle.cpp in Sources */,
+				417975D52136E8E000E3E690 /* MRDOMNode+React.m in Sources */,
+				411B05E6211347A300BBD91D /* ViewController.m in Sources */,
+				411B05EE211347A400BBD91D /* main.m in Sources */,
+				417975CD2136E69500E3E690 /* YGNodePrint.cpp in Sources */,
+				417975C82136E69500E3E690 /* Utils.cpp in Sources */,
+				411B05F821134A2F00BBD91D /* MREngine.m in Sources */,
+				417975CB2136E69500E3E690 /* Yoga.cpp in Sources */,
+				417975CE2136E69500E3E690 /* YGEnums.cpp in Sources */,
+				411B0607212325C400BBD91D /* MRRootView.m in Sources */,
+				417975C92136E69500E3E690 /* YGLayout.cpp in Sources */,
+				417975CF2136E69500E3E690 /* YGConfig.cpp in Sources */,
+				411B05E3211347A300BBD91D /* AppDelegate.m in Sources */,
+				417975CA2136E69500E3E690 /* YGFloatOptional.cpp in Sources */,
+				411B0604212325A100BBD91D /* MRView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		411B05E9211347A400BBD91D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411B05EA211347A400BBD91D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		411B05F0211347A400BBD91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		411B05F1211347A400BBD91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		411B05F3211347A400BBD91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyReactNative/MyReactNative.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XT598V22PU;
+				INFOPLIST_FILE = MyReactNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kjyu.MyReactNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		411B05F4211347A400BBD91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyReactNative/MyReactNative.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XT598V22PU;
+				INFOPLIST_FILE = MyReactNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kjyu.MyReactNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		411B05D9211347A300BBD91D /* Build configuration list for PBXProject "MyReactNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411B05F0211347A400BBD91D /* Debug */,
+				411B05F1211347A400BBD91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411B05F2211347A400BBD91D /* Build configuration list for PBXNativeTarget "MyReactNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411B05F3211347A400BBD91D /* Debug */,
+				411B05F4211347A400BBD91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 411B05D6211347A300BBD91D /* Project object */;
+}
