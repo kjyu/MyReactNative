@@ -1,3 +1,42 @@
+var myreact = {
+    globalNode: undefined
+}
+
+function _callJSEvent(vnode, reactTag, eventName, reactEvent) {
+    if (vnode._nativeTag === reactTag) {
+        if (typeof vnode.attrs[eventName] === 'function') {
+            vnode.attrs[eventName].call(reactEvent);
+            return true;
+        }
+        return false;
+    }
+
+    var childrens = vnode.children;
+
+    for (let i = 0; i < childrens.length; i++) {
+        var child = childrens [i];
+        var ret = _callJSEvent(child, reactTag, eventName, reactEvent);
+        if (ret) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+/**
+ * @param {string} reactTag  节点标记
+ * @param {string} eventName 事件类型名称
+ * @param {object} reactEvent 事件参数
+ * @returns {bool} 是否执行成功
+ */
+function _nativeCallJSEvent(reactTag, eventName, reactEvent) {
+    console.log('native event call js [' + reactTag + ',' + eventName + ',' + reactEvent);
+    if (myreact.globalNode) {
+        _callJSEvent(myreact.globalNode, reactTag, eventName, reactEvent);
+    }
+}
+
 // modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -218,6 +257,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       //
       if (!dom || !isSameNodeType(dom, vnode)) {
           out = document.createElement(vnode.tag);
+          // set reactTag 
+          out.reactTag = vnode._nativeTag;
   
           if (dom) {
               [].concat(_toConsumableArray(dom.childNodes)).map(out.appendChild); // 将原来的子节点移到新节点下
@@ -357,6 +398,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       var base = void 0;
   
       var renderer = component.render();
+  
+      // 保存虚拟节点
+      if (typeof myreact !== 'undefined') {
+          if (myreact.globalNode === undefined) {
+              myreact.globalNode = renderer;
+          }
+      }
   
       if (component.base && component.componentWillUpdate) {
           component.componentWillUpdate();
@@ -547,6 +595,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
+  var MRTagHandlers = {
+      tagCount: 1,
+      getReactTag: function getReactTag() {
+          this.tagCount++;
+          return this.tagCount;
+      }
+  };
+  
   function createElement(tag, attrs) {
   
       attrs = attrs || {};
@@ -566,7 +622,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           tag: tag,
           attrs: attrs,
           children: child,
-          key: attrs.key || null
+          key: attrs.key || null,
+          _nativeTag: MRTagHandlers.getReactTag()
       };
   }
   
@@ -856,7 +913,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
                       { onClick: function onClick() {
                               return _this5.onClick();
                           } },
-                      '\u7BAD\u5934\u51FD\u6570',
+                      't\u7BAD\u5934\u51FD\u6570',
                       this.state.num
                   )
               );
@@ -896,7 +953,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
     var hostname = '' || location.hostname;
     var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-    var ws = new WebSocket(protocol + '://' + hostname + ':' + '55814' + '/');
+    var ws = new WebSocket(protocol + '://' + hostname + ':' + '62667' + '/');
     ws.onmessage = function (event) {
       var data = JSON.parse(event.data);
   

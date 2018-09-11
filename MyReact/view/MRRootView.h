@@ -9,7 +9,9 @@
 #import "MRView.h"
 
 @class MREngine;
+@class MRTouchHandler;
 
 @interface MRRootView : MRView
+@property (nonatomic, readonly) MRTouchHandler* touchHandler;
 - (void) loadFromFile:(NSString*) path;
 @end

@@ -8,6 +8,7 @@
 
 #import "MRRootView.h"
 #import "MREngine.h"
+#import "MRTouchHandler.h"
 
 @interface MRRootView ()
 @property (nonatomic) MREngine* engine;
@@ -19,7 +20,9 @@
 {
     self = [super init];
     if (self) {
-        
+        _touchHandler = [[MRTouchHandler alloc] init];
+        [_touchHandler attachToView:self];
+        _touchHandler.jsContext = self.engine.jsContext;
     }
     return self;
 }

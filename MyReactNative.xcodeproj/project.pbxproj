@@ -27,6 +27,7 @@
 		417975CF2136E69500E3E690 /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C62136E69500E3E690 /* YGConfig.cpp */; };
 		417975D02136E69500E3E690 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417975C72136E69500E3E690 /* YGNode.cpp */; };
 		417975D52136E8E000E3E690 /* MRDOMNode+React.m in Sources */ = {isa = PBXBuildFile; fileRef = 417975D42136E8E000E3E690 /* MRDOMNode+React.m */; };
+		417975D92144142500E3E690 /* MRTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 417975D82144142500E3E690 /* MRTouchHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		417975C72136E69500E3E690 /* YGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YGNode.cpp; sourceTree = "<group>"; };
 		417975D32136E8E000E3E690 /* MRDOMNode+React.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRDOMNode+React.h"; sourceTree = "<group>"; };
 		417975D42136E8E000E3E690 /* MRDOMNode+React.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MRDOMNode+React.m"; sourceTree = "<group>"; };
+		417975D72144142500E3E690 /* MRTouchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTouchHandler.h; sourceTree = "<group>"; };
+		417975D82144142500E3E690 /* MRTouchHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTouchHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 		411B05F52113498000BBD91D /* MyReact */ = {
 			isa = PBXGroup;
 			children = (
+				417975D6214413C300E3E690 /* base */,
 				417975B22136E66000E3E690 /* 3rd */,
 				417975AF21319CD200E3E690 /* test */,
 				417975AB21313FA100E3E690 /* dom */,
@@ -193,6 +197,15 @@
 				417975C72136E69500E3E690 /* YGNode.cpp */,
 			);
 			path = yoga;
+			sourceTree = "<group>";
+		};
+		417975D6214413C300E3E690 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				417975D72144142500E3E690 /* MRTouchHandler.h */,
+				417975D82144142500E3E690 /* MRTouchHandler.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 				417975CD2136E69500E3E690 /* YGNodePrint.cpp in Sources */,
 				417975C82136E69500E3E690 /* Utils.cpp in Sources */,
 				411B05F821134A2F00BBD91D /* MREngine.m in Sources */,
+				417975D92144142500E3E690 /* MRTouchHandler.m in Sources */,
 				417975CB2136E69500E3E690 /* Yoga.cpp in Sources */,
 				417975CE2136E69500E3E690 /* YGEnums.cpp in Sources */,
 				411B0607212325C400BBD91D /* MRRootView.m in Sources */,
@@ -413,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyReactNative/MyReactNative.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XT598V22PU;
@@ -423,6 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kjyu.MyReactNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -431,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyReactNative/MyReactNative.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XT598V22PU;
@@ -441,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kjyu.MyReactNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

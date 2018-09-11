@@ -22,6 +22,7 @@
 @property (nonatomic) MRDOMNode* parentNode;
 @property (nonatomic) unsigned short nodeType;
 @property (nonatomic, copy) NSString *textContent;
+@property (nonatomic) NSNumber* reactTag;
 
 - (MRDOMNode *) appendChild:(MRDOMNode *) node;
 JSExportAs(insertBefore, - (MRDOMNode *) insertBefore:(MRDOMNode *) node :(MRDOMNode *) ref);
@@ -137,6 +138,8 @@ JSExportAs(setAttribute,- (void) setAttribute:(NSString *) name :(NSString *) va
 {
     if (!_view) {
         _view = [[MRView alloc] initWithFrame:NSMakeRect(arc4random_uniform(20), arc4random_uniform(50), 300, 300)];
+        // reactTag
+        _view.reactTag = _reactTag;
     }
     
     return _view;

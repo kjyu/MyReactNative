@@ -12,4 +12,5 @@
 @interface MRDOMNode (React)
 // layout
 @property (nonatomic, assign, readonly) YGNodeRef yogaNode;
+@property (nonatomic, assign) YGValue top;
 @end

@@ -10,7 +10,7 @@
 
 @implementation MRView
 
--(instancetype)initWithFrame:(NSRect)frameRect
+- (instancetype)initWithFrame:(NSRect)frameRect
 {
     self = [super initWithFrame:frameRect];
     
@@ -24,6 +24,26 @@
     [_backgroundColor setFill];
     NSRectFill(self.bounds);
     // Drawing code here.
+}
+
+- (void)mouseDown:(NSEvent *)event
+{
+//    [super mouseDown:event];
+    NSLog(@"mouse down...%@-%@", self.reactTag, self);
+}
+
+- (NSNumber *)reactTagAtPoint:(CGPoint)point
+{
+    NSView* view = [self hitTest:point];
+    while (view && [view isKindOfClass:[MRView class]] && !((MRView*)view).reactTag) {
+        view = view.superview;
+    }
+    
+    if (view && [view isKindOfClass:[MRView class]]) {
+        return [(MRView*)view reactTag];
+    } else {
+        return nil;
+    }
 }
 
 @end

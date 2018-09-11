@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 @class MRDOMDocument;
 @class MRRootView;
+@class JSContext;
 
 @interface MREngine : NSObject
+@property (nonatomic) JSContext* jsContext;
 @property (nonatomic, weak) MRRootView* rootView;
 - (void) loadFromFile:(NSString*) path;
 @end

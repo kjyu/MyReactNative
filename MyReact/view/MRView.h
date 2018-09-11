@@ -10,4 +10,9 @@
 
 @interface MRView : NSView
 @property (nonatomic) NSColor* backgroundColor;
+// js中生成传递过来用于调用
+@property (nonatomic) NSNumber* reactTag;
+@property (nonatomic) NSNumber* nativeID;
+
+- (NSNumber*)reactTagAtPoint:(CGPoint)point;
 @end

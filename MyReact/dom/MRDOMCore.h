@@ -29,6 +29,7 @@
 @property (nonatomic) MRDOMNode* parentNode;
 @property (nonatomic) unsigned short nodeType;
 @property (nonatomic, copy) NSString *textContent;
+@property (nonatomic) NSNumber* reactTag;
 
 - (id) _initWithName:(NSString *) name namespaceURI:(NSString *) uri;
 - (MRDOMNode *) appendChild:(MRDOMNode *) node;

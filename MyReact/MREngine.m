@@ -12,7 +12,6 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @interface MREngine ()
-@property (nonatomic) JSContext* jsContext;
 @property (nonatomic) MRDOMDocument* document;
 @end
 
